@@ -1,0 +1,24 @@
+body {
+    background-color: black !important;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+.card{
+    background-color: white;
+    border: solid white;
+    border-radius: 10px;
+    margin:2rem;
+    width: 24rem;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+main > div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
