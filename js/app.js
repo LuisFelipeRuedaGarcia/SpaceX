@@ -1,4 +1,4 @@
-divCards = document.querySelector("#divCards")
+divCards = document.querySelector("#Cards")
 const url = "https://api.spacexdata.com/v3/launches"
 function principal(){
 fetch(url)
@@ -9,11 +9,11 @@ fetch(url)
 
 function insertCards(launches){
     launches.forEach(launche => {
-        divCards.insertAdyacentHTML("beforeend", /*html*/`
+        console.log(divCards);
+        divCards.insertAdjacentHTML("beforeend",`
         <div class="card">
             <img class="maid-img-top" src="${launche.links.mission_patch}" alt="Card image cap">
             <div class="card-body">
-                
                 <p class="card-text"><span>${launche.launch_year}</span></p>
                 <a href="#" class="btn btn-primary">Details</a>
             </div>
